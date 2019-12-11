@@ -1,24 +1,45 @@
-def new_hash
+require 'pry'
 
+def new_hash
+  {}
 end
 
 def actor
-
+ actor = new_hash
+ 
+ actor[:name] = "Dwayne The Rock Johnson"
+ actor
 end
 
 def monopoly
 	monopoly = {}
-
+  monopoly[:railroads] = {}
+  monopoly
 end
 
 def monopoly_with_second_tier
 	#copy and paste the monopoly hash you built in the previous method. We're going to add stuff to it here!
-
+  monopoly = {}
+  monopoly[:railroads] = {
+    :pieces => 4, 
+    :names => {},
+    :rent_in_dollars => {}
+  }
+  monopoly
 end
 
 def monopoly_with_third_tier
 	#copy and paste the monopoly hash you built in the previous method. We're going to add stuff to it here!
-
+  monopoly = {}
+  monopoly[:railroads] = {
+    :pieces => 4, 
+    :names => {},
+    :rent_in_dollars => {
+      :one_piece_owned => 25,
+      
+    }
+  }
+  monopoly
 end
 
 def monopoly_with_fourth_tier
